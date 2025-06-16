@@ -1,0 +1,252 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* FONS */ 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  background: linear-gradient(
+    135deg,
+    #242424 25%,
+    #2b2b2b 25%,
+    #2b2b2b 50%,
+    #242424 50%,
+    #242424 75%,
+    #2b2b2b 75%,
+    #2b2b2b
+  );
+  background-size: 40px 40px;
+
+  animation: move 30s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 500px 500px;
+  }
+}
+
+.cont_blanc{
+  margin-top: 100px;
+  background-color:white;
+  border-radius: 10px;
+  max-width: 1400px;
+  width: 100%;
+  padding: 100px 0px;
+}
+
+/* body */
+h1{
+  font-size: 2.5em;
+  font-family: 'Tomorrow';
+}
+
+h2{
+  font-size: 1.8em;
+  font-family: 'Tomorrow';
+}
+
+h3{
+  font-size: 1.3em;
+  font-family: 'Tomorrow';
+}
+
+p, textarea{
+  font-family: 'Roboto Mono';
+}
+
+.estruct{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.posicioPerfil{
+  position: relative;
+}
+
+.dadesPrincipal{
+  position: static;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  gap: 10px;
+}
+
+#fotoPerfil{
+
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+#llistaImatgesPerfil{
+  display:flex; 
+  flex-wrap:wrap; 
+  gap:10px; 
+  justify-content:center;
+}
+
+.imgsPkmnModal{
+  cursor: pointer;
+  width: 80px;
+  transition: all 0.3s;
+}
+
+.imgsPkmnModal:hover{
+  background-color: #dfdfdf;
+  border-radius: 5px;
+}
+
+.dadesPrincipal h2{
+  text-align: center;
+}
+
+.totalLike{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.totalLike p{
+  margin: 0px;
+}
+
+.divTancarSessio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tancarSessio{
+  cursor: pointer;
+  color: white;
+  background-color: rgba(68, 68, 68, 0.85);
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+
+#tancarSessio:hover{
+  background-color: rgba(68, 68, 68);
+  transition: all 0.3s;
+}
+
+.equipsCreats{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caixa{
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px 0px 10px 0px;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: rgba(68, 68, 68, 0.85);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.nomMiniMenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.miniMenu{
+  cursor: pointer;
+}
+
+.menuOpcionsContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.menuOpcions {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px 0;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.menuOpcions p {
+  margin: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.menuOpcions p:hover {
+  background-color: #eee;
+  transition: all 0.3s;
+}
+
+.menuOpcionsContainer:hover .menuOpcions {
+  display: block;
+}
+
+.equipPokemon{
+  background-color: white;
+  border-radius: 15px;
+  gap: 5px;
+}
+
+.totalLikeEquip{
+  margin: 10px 0px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.totalLikeEquip p{
+  margin: 0px;
+}
+
+.afegirCaixa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0px 10px 0px;
+  color: white;
+  width: 300px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: rgba(68, 68, 68, 0.85);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+
+.afegirCaixa:hover{
+  background-color: rgba(68, 68, 68);
+}

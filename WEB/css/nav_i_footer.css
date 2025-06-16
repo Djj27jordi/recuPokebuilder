@@ -1,0 +1,298 @@
+/* NAVBAR */
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(var(--dark-bg), 1) !important;
+  color: white !important;
+  box-shadow: 0 2px 8px #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky !important;
+  top: 0;
+  z-index: 10;
+}
+
+.botoNavbar {
+  display: none;
+}
+
+.logoMenu {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 40px;
+  height: 75px;
+}
+
+nav a {
+  padding: 10px 15px 10px 15px;
+}
+
+.botoMenu {
+  background-color: #cfcfcf;
+  border-color: #313131;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 40px;
+  height: 75px;
+}
+
+/* MENU */
+.llistaMenu {
+  margin: auto 0px;
+  list-style: none;
+  display: flex;
+  padding: 0px;
+}
+
+.menuDropdown {
+  list-style: none;
+  padding-left: 0px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--dark);
+  border: 1px solid rgba(var(--dark-bg), 1);
+  padding: 0.5rem 0;
+  z-index: 1;
+
+  /* poso que cada 8 files en la columna es posi lo demes en unaltre columna */
+  grid-template-columns: repeat(2, max-content);
+}
+
+.menuDropdown a {
+  display: block;
+  color: white;
+  padding: 10px 15px 10px 15px;
+}
+
+.menuDropdown a:hover {
+  color: white;
+  background-color: rgb(69, 69, 69);
+}
+
+li {
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Mostrar el submenú en passar el ratolí */
+.dropdown:hover .menuDropdown {
+  display: grid;
+}
+
+/* perfil */
+.perfil {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 15px 8px 15px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 3px #444;
+  gap: 10px;
+}
+
+.perfil p {
+  margin: 0px;
+}
+
+.accesPerfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px !important;
+}
+
+.fotoUser {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.fotoUser img {
+  height: 110%;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0px 100px 0px;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.menuFooter {
+  border-right: 2px solid white;
+  padding-right: 2%;
+}
+
+.menuFooter h3 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.menuFooter ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.menuFooter li {
+  color: white;
+  padding: 7px 10px 7px 10px;
+}
+
+.menuFooter a {
+  text-decoration: none;
+}
+
+.formulariFoter {
+  width: 400px;
+}
+
+.formulariFoter h3 {
+  color: white;
+}
+
+.formulariFoter label {
+  color: white;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.formulariFoter input,
+.formulariFoter textarea {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.formulariFoter textarea {
+  height: 100px;
+}
+
+.contacteFooter {
+  border-left: 2px solid white;
+  padding-left: 2%;
+}
+
+.contacteFooter h3 {
+  color: white;
+}
+
+.divContacte {
+  height: 175px;
+  width: 175px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.contacte {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.contacte img {
+  width: 50px;
+}
+
+.pokebuilder_logo {
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_span {
+  display: flex;
+  align-items: center;
+}
+
+.footer_span img {
+  height: 1em;
+  vertical-align: middle;
+  margin: 0 0.1em;
+}
+
+@media (max-width: 991px) {
+
+  /* navbar */
+  .botoNavbar {
+    display: block;
+    margin-right: 50px;
+    background-color: #555555;
+    border-color: #dbdbdb;
+  }
+
+  .amagarPerfil {
+    display: none;
+  }
+
+  .offcanvas {
+    color: white !important;
+  }
+
+  .navMobil li {
+    margin: 10px 0px;
+  }
+
+  /* footer */
+  footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 100px 100px 100px;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .formulariFoter {
+    display: none;
+  }
+
+  .menuFooter {
+    text-align: center;
+    border-right: 0px solid white;
+    border-bottom: 2px solid white;
+    padding-right: 0%;
+  }
+
+  .contacteFooter {
+    margin-top: 30px;
+    border-left: 0px solid white;
+    padding-left: 0%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
